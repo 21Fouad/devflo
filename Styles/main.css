@@ -1,0 +1,390 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #ccc;
+  overflow: hidden;
+}
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999999999;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 88888;
+  display: none;
+  color: purple;
+}
+.navbar-dark {
+  z-index: 10000;
+  transition: all;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+/* section of home */
+.home {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opacity {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0.9;
+}
+.home-content {
+  z-index: 9999;
+  position: absolute;
+}
+.home-content h1 {
+  font-size: 70px;
+  color: white;
+}
+.home-content h2 {
+  color: white;
+}
+.anim::after {
+  content: "|";
+  animation-name: typing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation: typing 10s infinite;
+}
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  3% {
+    content: "d|";
+  }
+  6% {
+    content: "de|";
+  }
+  9% {
+    content: "dev|";
+  }
+  12% {
+    content: "deve|";
+  }
+  15% {
+    content: "devel|";
+  }
+  18% {
+    content: "develo|";
+  }
+  21% {
+    content: "develop|";
+  }
+  24% {
+    content: "develope|";
+  }
+  27% {
+    content: "developer|";
+  }
+  30% {
+    content: "develope|";
+  }
+  33% {
+    content: "develop|";
+  }
+  36% {
+    content: "develo|";
+  }
+  39% {
+    content: "devel|";
+  }
+  41% {
+    content: "deve|";
+  }
+  44% {
+    content: "dev|";
+  }
+  47% {
+    content: "de|";
+  }
+  50% {
+    content: "d|";
+  }
+  53% {
+    content: "|";
+  }
+  56% {
+    content: "d|";
+  }
+  59% {
+    content: "de|";
+  }
+  61% {
+    content: "des|";
+  }
+  64% {
+    content: "desi|";
+  }
+  67% {
+    content: "desig|";
+  }
+  70% {
+    content: "design|";
+  }
+  73% {
+    content: "designe|";
+  }
+  76% {
+    content: "designer|";
+  }
+  79% {
+    content: "designe|";
+  }
+  81% {
+    content: "design|";
+  }
+  84% {
+    content: "desig|";
+  }
+  87% {
+    content: "desi|";
+  }
+  91% {
+    content: "des|";
+  }
+  94% {
+    content: "de|";
+  }
+  97% {
+    content: "d|";
+  }
+  100% {
+    content: "|";
+  }
+}
+.about p {
+  color: #4e4e4e;
+  font-size: 19px;
+}
+.after::after {
+  content: " ";
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  background-color: #0078ff;
+}
+.after1::after {
+  content: " ";
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  bottom: -8px;
+  left: 45%;
+  background-color: #0078ff;
+  transform: translate(45%);
+}
+/* section of services */
+.services p {
+  color: #4e4e4e;
+}
+.services i {
+  font-size: 50px;
+  border: #0078ff 5px solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+.services i:hover {
+  background-color: cornflowerblue;
+  border: rgba(0, 0, 0, 0.6);
+}
+/* section of numbers */
+.numbers {
+  background-image: url(./img/counters-bg.jpg);
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+.numbers h3,
+.numbers p {
+  color: white;
+  position: relative;
+}
+.numbers i {
+  font-size: 50px;
+  padding: 10px;
+  color: white;
+  position: relative;
+  border: white 5px solid;
+  border-radius: 50%;
+}
+.numbers i:hover {
+  background-color: cornflowerblue;
+  border: rgba(0, 0, 0, 0.6);
+}
+/* sectionof portfilo */
+.special {
+  color: #0078ff;
+}
+.portfilo i {
+  font-size: 20px;
+  border: #0078ff 5px solid;
+  border-radius: 50%;
+  padding: 10px;
+  color: #0078ff;
+}
+.carousel-item p,
+.carousel-item h5 {
+  color: #fff;
+}
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* sectionof blogs */
+.blogs a {
+  text-decoration: none;
+  color: black;
+}
+.blogs a:hover {
+  text-decoration: none;
+  color: blueviolet;
+  transition-duration: 2s;
+}
+.web::after {
+  content: "web design ";
+  width: 100px;
+  height: 26px;
+  position: absolute;
+  bottom: -10px;
+  left: 25%;
+  background-color: #0078ff;
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+}
+/* section of contact */
+.contact {
+  background-image: url(./img/overlay-bg.jpg);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 120, 255, 0.7);
+}
+.contact-content {
+  position: relative;
+}
+.contact button {
+  color: white;
+}
+.contact-iconblue i {
+  color: #0078ff;
+}
+.icons i {
+  color: black;
+  font-size: 20px;
+  border: #0078ff 5px solid;
+  border-radius: 50%;
+  padding: 10px;
+}
+.icons i:hover {
+  background-color: cornflowerblue;
+  border: rgba(0, 0, 0, 0.6);
+}
+/* section of footer */
+.footer {
+  color: white;
+}
+.footer span {
+  font-weight: bold;
+}
+.footer p {
+  margin-bottom: 0;
+}
